@@ -1,0 +1,12 @@
+<form action="/upload" method="post" enctype="multipart/form-data" class='form-container'>
+    <div>
+        <input type="file" name="img" accept='image/*' />
+        <button>Submit</button>
+    </div>
+
+    <div class='display'>
+        {{#each imgUrl}}
+            <img src="{{this}}" alt="img" height="150px" width="250px">
+        {{/each}}
+    </div>
+</form>
